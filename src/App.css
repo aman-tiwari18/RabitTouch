@@ -1,0 +1,96 @@
+.type {
+  text-align: center;
+}
+.nav{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
+  
+}
+body{
+  margin: 0;
+  background-color: rgb(50, 52, 55);
+  color: rgba(209, 209, 1, 0.521);
+}
+.time{
+  margin: 0;
+}
+.tbutton{
+  padding: 2px;
+  margin: 2px;
+  background-color: #d1d0c5;
+}
+.tbutton:hover{
+  cursor: pointer;
+  
+
+}
+.rbutton{
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  color: rgba(240, 240, 39, 0.699);
+  background-color: rgb(50, 52, 55);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 10px;
+  
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+
+.is-size-1{
+    font-size: 2.5rem;
+    color: rgba(209, 209, 1, 0.808);
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+
+.button{
+      background-color: black;
+      padding: 10px;
+      margin-top: 10px;
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      text-align: center;
+      color: #d1d0c5;
+}
+
+.input{
+  font-size: 1.5rem;
+  width: 100vh;
+  border-radius: 5px;
+}
+
+.columns{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.is-size-5{
+  font-size: 2rem;
+  color:rgb(53, 17, 37);
+}
+
+.content{
+  font-size: 2rem;
+  color: #d1d0c5;
+}
+.has-background-success{
+  color: green;
+}
+
+.has-background-danger{
+  color: red;
+}
