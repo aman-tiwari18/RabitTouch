@@ -2,12 +2,16 @@ import {useState, useEffect, useRef} from 'react';
 import "./App.css";
 // import Navabar from './Navabar';
 import randomWords from 'random-words'
-const NUMB_OF_WORDS = 200
-const SECONDS = 60
+const NUMB_OF_WORDS = 100
+// const SECONDS = 60
+
+
+
 
 function Type() {
+  const [time, setTime] = useState(30);
   const [words, setWords] = useState([])
-  const [countDown, setCountDown] = useState(SECONDS)
+  const [countDown, setCountDown] = useState(time)
   const [currInput, setCurrInput] = useState("")
   const [currWordIndex, setCurrWordIndex] = useState(0)
   const [currCharIndex, setCurrCharIndex] = useState(-1)
@@ -16,6 +20,22 @@ function Type() {
   const [incorrect, setIncorrect] = useState(0)
   const [status, setStatus] = useState("waiting")
   const textInput = useRef(null)
+
+
+const on30 = ()=>{
+      setTime(30); 
+}   
+  
+const on60 = ()=>{
+      setTime(60);
+}
+
+const refresh = (e)=>{
+  
+    window.location.reload(false);
+      
+  
+}
 
   useEffect(() => {
     setWords(generateWords())
@@ -50,7 +70,7 @@ function Type() {
             clearInterval(interval)
             setStatus('finished')
             setCurrInput("")
-            return SECONDS
+            return countDown
           } else {
             return prevCountdown - 1
           }
@@ -103,6 +123,34 @@ function Type() {
 
 
   return (
+    // [
+    <div>
+    <nav className = "nav">
+            
+            <button onClick = {refresh} className = " rbutton">Rabittype</button>
+            <ul>
+                <h3 className = "time">time</h3>
+                <span className = "gap">
+                <button onClick = {()=>{
+                  if(status!=='started'){
+                    on30()
+                    setCountDown(time)
+                  }
+                  
+                  
+                }}  className = "tbutton">30</button>
+                <button onClick={()=>{
+                  if(status!=='started'){
+                    on60()
+                    setCountDown(time)
+                  }
+                  
+                  
+                }} className = "tbutton">60</button>
+                </span>
+                
+            </ul>
+        </nav>
     <div className="type">
       {/* <Navabar/> */}
       <div className="section">
@@ -162,7 +210,11 @@ function Type() {
       )}
 
     </div>
+    </div>
+    // ,on30,on60]
+    
   );
 }
 
 export default Type;
+
