@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RabitTouch/static/css/main.3869cd0c.css",
-    "main.js": "/RabitTouch/static/js/main.add93d60.js",
-    "static/js/787.2fb12704.chunk.js": "/RabitTouch/static/js/787.2fb12704.chunk.js",
-    "index.html": "/RabitTouch/index.html",
-    "main.3869cd0c.css.map": "/RabitTouch/static/css/main.3869cd0c.css.map",
-    "main.add93d60.js.map": "/RabitTouch/static/js/main.add93d60.js.map",
-    "787.2fb12704.chunk.js.map": "/RabitTouch/static/js/787.2fb12704.chunk.js.map"
+    "main.css": "/RabitType/static/css/main.c9280f18.css",
+    "main.js": "/RabitType/static/js/main.e42ddfd8.js",
+    "static/js/787.2fb12704.chunk.js": "/RabitType/static/js/787.2fb12704.chunk.js",
+    "index.html": "/RabitType/index.html",
+    "main.c9280f18.css.map": "/RabitType/static/css/main.c9280f18.css.map",
+    "main.e42ddfd8.js.map": "/RabitType/static/js/main.e42ddfd8.js.map",
+    "787.2fb12704.chunk.js.map": "/RabitType/static/js/787.2fb12704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3869cd0c.css",
-    "static/js/main.add93d60.js"
+    "static/css/main.c9280f18.css",
+    "static/js/main.e42ddfd8.js"
   ]
 }
