@@ -9,7 +9,7 @@ const NUMB_OF_WORDS = 100
 
 
 function Type() {
-  const [time, setTime] = useState(30);
+  const [time, setTime] = useState(60);
   const [words, setWords] = useState([])
   const [countDown, setCountDown] = useState(time)
   const [currInput, setCurrInput] = useState("")
